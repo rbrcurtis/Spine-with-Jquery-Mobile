@@ -1,0 +1,210 @@
+border-radius()
+	-moz-border-radius: arguments
+	-webkit-border-radius: arguments
+	border-radius: arguments
+
+/* Vertical Background Gradient */
+vbg-gradient(fc = #FFF, tc = #FFF)
+	background: fc
+	background: -webkit-gradient(linear, left top, left bottom, from(fc), to(tc))
+	background: -moz-linear-gradient(top, fc, tc)
+	background: linear-gradient(top, fc, tc)
+
+/* Horizontal Background Gradient */
+hbg-gradient(fc = #FFF, tc = #FFF) 
+	background: fc
+	background: -webkit-gradient(linear, left top, right top, from(fc), to(tc))
+	background: -moz-linear-gradient(left, fc, tc)
+	background: linear-gradient(left, fc, tc)
+
+box-shadow()
+	-moz-box-shadow: arguments
+	-webkit-box-shadow: arguments
+	box-shadow: arguments
+
+inset-box-shadow()
+	-moz-box-shadow: inset arguments
+	-webkit-box-shadow: inset arguments
+	box-shadow: inset arguments
+
+box-flex(s = 0)
+	-webkit-box-flex: s
+	-moz-box-flex: s
+	box-flex: s
+
+hbox()
+	display: -webkit-box
+	-webkit-box-orient: horizontal
+	-webkit-box-align: stretch
+	-webkit-box-pack: start
+	
+	display: -moz-box
+	-moz-box-orient: horizontal
+	-moz-box-align: stretch
+	-moz-box-pack: start
+
+vbox()
+	display: -webkit-box
+	-webkit-box-orient: vertical
+	-webkit-box-align: stretch
+
+	display: -moz-box
+	-moz-box-orient: vertical
+	-moz-box-align: stretch
+
+border-box()
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+transition(s = 0.3s, o = opacity, t = linear)
+	-webkit-transition: s o t
+	-moz-transition: s o t
+	transition: s o t
+
+ellipsis()
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space:nowrap
+
+inset-line(opacity = 0.4, size = 1px)
+	inset-box-shadow(0, size, 0, rgba(255, 255, 255, opacity))
+
+outset-line(opacity = 0.4, size = 1px)
+	box-shadow(0, size, 0, rgba(255, 255, 255, opacity))
+
+box-pack(type = center)
+	-webkit-box-pack: type
+	-moz-box-pack: type
+	box-pack: type
+	
+transform(tr)
+	-webkit-transform: tr
+	-moz-transform: tr
+	-ms-transform: tr
+	-o-transform: tr
+	transform: tr
+	
+hacel()
+	transform(translate3d(0,0,0))
+
+body, html, article, .panel
+	height: 100%
+	margin: 0px
+	padding: 0px
+	
+.viewport
+	position: relative
+	
+	> *
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		
+		&:not(.active)
+			display: none
+			
+body.stage 
+	> article
+		position: fixed
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+
+.panel
+	vbox()
+
+	> article
+		box-flex(1)
+
+		overflow: auto
+		-webkit-overflow-scrolling: touch
+		
+body
+	//font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+	//overflow-x: hidden
+	//-webkit-user-select: none
+	//margin: 0; padding: 0
+	//color: #ffc921
+	//background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.28, rgb(213,210,219)),color-stop(0.57, rgb(186,209,209)));
+	//background: #D5D2DB
+	//background: #03899C
+	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(100%,#7db9e8));//blue
+	
+
+.panel
+	background: white
+	//background: -webkit-gradient(linear,left bottom,left top,color-stop(0.31, rgb(116,10,64)),color-stop(0.66, rgb(151,36,90)));
+	//background: -moz-linear-gradient(rgb(116,10,64),rgb(151,36,90));
+	
+	h2
+		//margin: 0
+		//padding: 0
+		//text-align: center
+		//color: #fffeff
+		//text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5)
+		//font-weight: normal
+	
+	button
+		
+		//background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(191,57,48)),color-stop(0.65, rgb(255,123,0)));//orange
+		//background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.31, rgb(116,10,64)),color-stop(0.66, rgb(151,36,90)));//purple
+		//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc921), color-stop(100%,#ffa221));//yellow
+		//background: -moz-gradient(linear, left top, left bottom, color-stop(0%,#ffc921), color-stop(100%,#ffa221));//yellow
+		
+		//margin: 7px
+		//padding: 5px 12px
+		//border: 0px solid black
+		//border-radius(10px)
+		
+		//&:active
+		//	background: #FF9C40
+		
+.ui-body-a, .ui-body-c
+	background: white
+	
+.ui-loader
+	background: #777
+			
+#shutter
+	position: fixed
+	top: 0
+	left: 0
+	display: none
+	width: 100%
+	height: 100%
+	z-index: 100
+	border-bottom: 1px solid black
+	background: #eee
+
+
+header
+	display: none
+	
+footer
+	display: none
+
+article
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+		
+.input
+	.undefined
+		color: grey
+	.type
+		width: 70%
+		
+.menu
+	.ui-btn-inner
+		padding: 30px 0px
+	.ui-btn-text
+		font-size: 300%
+		
+.database
+	.record
+		//border: 1px solid red

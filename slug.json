@@ -1,0 +1,24 @@
+{
+	"dependencies": [
+		"es5-shimify", 
+		"json2ify", 
+		"spine",
+		"spine/lib/local",
+		"spine/lib/ajax",
+		"spine/lib/route",
+		"spine/lib/tmpl",
+		"spine/lib/manager",
+		"spine/lib/route"
+	],
+	"public": "./www",
+	"libs": [
+		"lib/jquery-1.7.1.js",
+		"lib/jquery.mobile-1.0.1.js",
+		"lib/jq-plugins.js",
+		"lib/phonegap-1.4.1.js",
+		"lib/webintent.js",
+		"lib/phonegap-toast.js",
+		"lib/barcodescanner.js",
+		"lib/underscore.js"
+	]
+}

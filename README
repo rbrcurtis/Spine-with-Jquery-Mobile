@@ -1,0 +1,1 @@
+This is an example project to demonstrate a project using spinejs and Jquery Mobile.  Note that there is only one page that loads, but navigation does work as expected if you add additional controllers to router.coffee.

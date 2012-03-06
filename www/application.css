@@ -1,0 +1,90 @@
+/* Vertical Background Gradient */
+/* Horizontal Background Gradient */
+body,
+html,
+article,
+.panel {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.viewport {
+  position: relative;
+}
+.viewport > * {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.viewport > *:not(.active) {
+  display: none;
+}
+body.stage > article {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.panel {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+}
+.panel > article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.panel {
+  background: #fff;
+}
+.ui-body-a,
+.ui-body-c {
+  background: #fff;
+}
+.ui-loader {
+  background: #777;
+}
+#shutter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #000;
+  background: #eee;
+}
+header {
+  display: none;
+}
+footer {
+  display: none;
+}
+article {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.input .undefined {
+  color: #808080;
+}
+.input .type {
+  width: 70%;
+}
+.menu .ui-btn-inner {
+  padding: 30px 0px;
+}
+.menu .ui-btn-text {
+  font-size: 300%;
+}

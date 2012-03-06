@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Savor</title>
+		<meta name="format-detection" content="telephone=no" />
+		<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<script src="application.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="jquery.mobile-1.0.1.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="application.css" type="text/css" />
+
+
+		<script type="text/javascript" charset="utf-8">
+			var exports = this;
+			$(function() {
+				var App = require("index");
+				exports.app = new App({
+					el : $("body")
+				});
+			});
+		</script>
+
+	</head>
+	<body></body>
+</html>

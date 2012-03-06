@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# v1.0.4
+NETWORK:
+*
+CACHE:
+./application.js
+./application.css
+./index.html
+https://savor.mut8ed.com
